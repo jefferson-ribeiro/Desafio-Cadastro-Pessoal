@@ -2,7 +2,7 @@
 /*EVITA INCOMPATIBILIDADE DE CARACTERES*/
 @charset "UTF-8";
 /* DEFINIR ESTILIZAÇÃO PADRÃO*/ 
-*{
+*{  
     font-family: Arial, Helvetica, sans-serif;
 }
 /* ataque direto */
@@ -28,6 +28,11 @@ footer {
     color: black;
     text-align: center;
     font-style: italic;
+}
+
+span {
+    color: red;
+    font-weight: bold;
 }
 
 /*Inputs*/

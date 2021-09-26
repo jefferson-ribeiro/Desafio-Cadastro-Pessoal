@@ -13,7 +13,7 @@ function cadastro() {
     var cid = document.getElementById(`txtcid`)
     var est = document.getElementById(`txtest`)
     var cep = document.getElementById(`txtcep`)
-    var tel = document.getElementById(`txtcel`)
+    var tel = document.getElementById(`txtfixo`)
     //Variavel resultado
     var res = document.getElementById(`resultado`)
 
@@ -21,7 +21,8 @@ function cadastro() {
 
     //Validação
     if (no.value.length == 0 || c.length == 0 || e.value.length == 0 || num.value.length == 0 || cel.value.length == 0) {
-        window.alert(`Preencha os itens obrigatórios*!`)
+        window.alert(`Preencha os itens obrigatórios*! \nVerifique se o CPF possui 11 digitos`)
+        
         no.style.backgroundColor = "#ff0000"
         c.style.backgroundColor = "#ff0000"
         e.style.backgroundColor = "#ff0000"
