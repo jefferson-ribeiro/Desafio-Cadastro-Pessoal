@@ -5,7 +5,7 @@ function cadastro() {
     var end = document.getElementById('txtend')
     var num = document.getElementById('txtnum')
     var cel = document.getElementById('txtcel')
-    //outras variaveis
+    //Outras variaveis
     var rg = document.getElementById(`txtrg`)
     var sexm = document.getElementById(`masc`)
     var sexf = document.getElementById(`fem`)
@@ -23,7 +23,6 @@ function cadastro() {
     var nrg = Number(rg.value)
     var ncep = Number(cep.value)
     var ntel = Number(tel.value)
-
     //Validação
     if (no.value.length == 0 || cpf.value.length == 0 || end.value.length == 0 || num.value.length == 0 || cel.value.length == 0) {
         window.alert(`Preencha os itens obrigatórios*!`)
@@ -32,10 +31,10 @@ function cadastro() {
         end.style.backgroundColor = "#ff0000"
         num.style.backgroundColor = "#ff0000"
         cel.style.backgroundColor = "#ff0000"
-    } else if (cpf.value.length !=11){
+    } else if (cpf.value.length != 11) {
         window.alert(`Obrigatoriamente o CPF deve conter 11 numeros!`)
     } else {
-    // Checagem de sexo
+        // Checagem de sexo
         if (sexm.checked) {
             var genero = "Masculino"
         } else if (sexf.checked) {
@@ -43,8 +42,8 @@ function cadastro() {
         } else {
             var genero = "Indefinido"
         }
-    // Mostrar o resultado
-        window.alert(`${no.value} seu cadastro foi efetuado com sucesso!`)
+        // Mostrar o resultado
+        window.alert(`${no.value} o seu cadastro foi efetuado com sucesso!`)
         res.innerHTML = `<p><strong>Nome: </strong>${no.value}</p>`
         res.innerHTML += `<p><strong>CPF: </strong>${ncpf}</p>`
         res.innerHTML += `<p><strong>RG: </strong>${nrg}</p>`
