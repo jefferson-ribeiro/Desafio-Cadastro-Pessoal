@@ -7,14 +7,17 @@
 }
 /* ataque direto */
 body {
-    background-color: orange;
+    background-color: rgb(255, 216, 143);
 }
-
 header {
     color: black;
     text-align: center;
 }
-
+h1 {
+    color: rgb(66, 66, 255);
+    font-size: 35px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 section {
     background-color: white;
     border-radius: 2vh;
@@ -23,18 +26,21 @@ section {
     margin: auto;
     box-shadow: 3px 3px 10px rgb(51, 51, 51);
 }
-
 footer {
     color: black;
     text-align: center;
     font-style: italic;
 }
-
 span {
     color: red;
     font-weight: bold;
 }
-
+button {
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    
+}
 /*Inputs*/
 #txtnom {
     width: 85%;
@@ -72,8 +78,11 @@ span {
 #txtcel {
     width: 30%;
 }
-
 /* onde aparece o resultado */
+#msg {
+    text-align: center;
+    font-weight: bold;
+}
 #resultado {
     background-color: rgb(236, 236, 236);
 }
