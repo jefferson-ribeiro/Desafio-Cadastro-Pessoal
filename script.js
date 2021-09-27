@@ -32,6 +32,8 @@ function cadastro() {
         end.style.backgroundColor = "#ff0000"
         num.style.backgroundColor = "#ff0000"
         cel.style.backgroundColor = "#ff0000"
+    } else if (cpf.value.length !=11){
+        window.alert(`Obrigatoriamente o CPF deve conter 11 numeros!`)
     } else {
     // Checagem de sexo
         if (sexm.checked) {
