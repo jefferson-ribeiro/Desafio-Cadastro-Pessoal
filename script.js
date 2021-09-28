@@ -23,65 +23,6 @@ function cadastro() {
     var nrg = Number(rg.value)
     var ncep = Number(cep.value)
     var ntel = Number(tel.value)
-
-    // Conteúdo validação CPF TESTE
-
-    function validaCPF(cpfteste) {
-    
-        if(cpfteste.length != 11) {
-        return false;
-        } else {
-        var numeros = cpfteste.substring(0, 9);
-        var digitos = cpfteste.substring(9);
-    
-            var soma = 0
-            for (var i = 10; i > 1; i --) {
-                soma += numeros.charAt(10 - i) * i;
-            }
-           
-    
-            var resultado = (soma % 11) < 2 ? 0 : 11 - (soma % 11);
-    
-            //validação do primeiro digito
-            if(resultado != digitos.charAt(0)) {
-                return false;
-            }
-           soma = 0;
-           numeros = cpfteste.substring(0, 10);
-    
-           for (var k = 11; k > 1; k--) {
-                soma += numeros.charAt(11 - k) *k;
-           }
-           
-    
-            resultado = soma % 11 < 2 ? 0 : 11 - (soma % 11);
-    
-            //validação do segundo digito
-            if (resultado != digitos.charAt(1)) {
-                return false;
-            }
-    
-            return true;
-        }
-    }
-
-    var resuladoCpf = validaCPF(cpf)
-
-    if (resuladoCpf === true){
-        window.alert(`CPF Válido`)
-    } else {
-        window.alert(`CPF Inválido`)
-    }
-
-
-
-
-
-
-
-
-
-// Conteúdo validação CPF TESTE
     //Validação
     if (no.value.length == 0 || cpf.value.length == 0 || end.value.length == 0 || num.value.length == 0 || cel.value.length == 0) {
         window.alert(`Preencha os itens obrigatórios*!`)
